@@ -12,7 +12,7 @@ namespace CSharpExamplesTest
         delegate String asString<T>(IEnumerable<T> values);
 
         [TestMethod]
-        public void TestMethod1()
+        public void Test()
         {
             log debug = (obj) => System.Diagnostics.Debug.WriteLine(obj);
             asString<int> valuesAsString = values => String.Join(",", values);
